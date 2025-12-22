@@ -1,0 +1,105 @@
+$date
+	Wed Dec 17 13:40:28 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_onebit $end
+$var wire 1 ! d $end
+$var wire 1 " bout $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % bin $end
+$scope module uut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % bin $end
+$var wire 1 & xor_1_out $end
+$var wire 1 ! d $end
+$var wire 1 " bout $end
+$var wire 1 ' and_2_out $end
+$var wire 1 ( and_1_out $end
+$scope module AND1 $end
+$var wire 1 ) a $end
+$var wire 1 $ b $end
+$var wire 1 ( c $end
+$upscope $end
+$scope module AND2 $end
+$var wire 1 * a $end
+$var wire 1 % b $end
+$var wire 1 ' c $end
+$upscope $end
+$scope module OR1 $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 " c $end
+$upscope $end
+$scope module XOR1 $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 & c $end
+$upscope $end
+$scope module XOR2 $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ! c $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1*
+1)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#1
+1"
+1'
+1!
+1%
+#2
+0*
+0'
+1(
+1&
+0%
+1$
+#3
+0!
+1%
+#4
+0"
+1!
+0(
+0)
+0%
+0$
+1#
+#5
+0!
+1%
+#6
+1*
+0&
+0%
+1$
+#7
+1"
+1'
+1!
+1%
+#13

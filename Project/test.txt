@@ -1,0 +1,55 @@
+make[1]: Entering directory 'C:/Users/jmorp/OneDrive/Desktop/Yr4/Sem1/Digital Electro Lab/Project'
+cd src/basic && iverilog -o tb_basic.out tb_basic.v && vvp tb_basic.out	
+VCD info: dumpfile tb_basic.vcd opened for output.
+Time: 0 | a: 0 | b: 0 | c_and: 0 | c_or: 0 | c_xor: 0
+Time: 1 | a: 0 | b: 1 | c_and: 0 | c_or: 1 | c_xor: 1
+Time: 2 | a: 1 | b: 0 | c_and: 0 | c_or: 1 | c_xor: 1
+Time: 3 | a: 1 | b: 1 | c_and: 1 | c_or: 1 | c_xor: 0
+tb_basic.v:40: $finish(2) called at 4 (1s)
+cd src/one-bit-sub && iverilog -o tb_onebit.out tb_onebit.v && vvp tb_onebit.out
+VCD info: dumpfile tb_onebit.vcd opened for output.
+Time: 0 | a: 0 | b: 0 | bin: 0 | d: 0 | bout: 0
+Time: 1 | a: 0 | b: 0 | bin: 1 | d: 1 | bout: 1
+Time: 2 | a: 0 | b: 1 | bin: 0 | d: 1 | bout: 1
+Time: 3 | a: 0 | b: 1 | bin: 1 | d: 0 | bout: 1
+Time: 4 | a: 1 | b: 0 | bin: 0 | d: 1 | bout: 0
+Time: 5 | a: 1 | b: 0 | bin: 1 | d: 0 | bout: 0
+Time: 6 | a: 1 | b: 1 | bin: 0 | d: 0 | bout: 0
+Time: 7 | a: 1 | b: 1 | bin: 1 | d: 1 | bout: 1
+tb_onebit.v:66: $finish(2) called at 13 (1s)
+cd src/two-bit-sub && iverilog -o tb_twobit.out tb_twobit.v && vvp tb_twobit.out
+VCD info: dumpfile tb_twobit.vcd opened for output.
+Time: 0 | a: 0 | b: 0 | bin: 0 | d: 0 | bout: 0
+Time: 2 | a: 0 | b: 0 | bin: 1 | d: 3 | bout: 1
+Time: 4 | a: 0 | b: 1 | bin: 0 | d: 3 | bout: 1
+Time: 6 | a: 0 | b: 1 | bin: 1 | d: 2 | bout: 1
+Time: 8 | a: 0 | b: 2 | bin: 0 | d: 2 | bout: 1
+Time: 10 | a: 0 | b: 2 | bin: 1 | d: 1 | bout: 1
+Time: 12 | a: 0 | b: 3 | bin: 0 | d: 1 | bout: 1
+Time: 14 | a: 0 | b: 3 | bin: 1 | d: 0 | bout: 1
+Time: 16 | a: 1 | b: 0 | bin: 0 | d: 1 | bout: 0
+Time: 18 | a: 1 | b: 0 | bin: 1 | d: 0 | bout: 0
+Time: 20 | a: 1 | b: 1 | bin: 0 | d: 0 | bout: 0
+Time: 22 | a: 1 | b: 1 | bin: 1 | d: 3 | bout: 1
+Time: 24 | a: 1 | b: 2 | bin: 0 | d: 3 | bout: 1
+Time: 26 | a: 1 | b: 2 | bin: 1 | d: 2 | bout: 1
+Time: 28 | a: 1 | b: 3 | bin: 0 | d: 2 | bout: 1
+Time: 30 | a: 1 | b: 3 | bin: 1 | d: 1 | bout: 1
+Time: 32 | a: 2 | b: 0 | bin: 0 | d: 2 | bout: 0
+Time: 34 | a: 2 | b: 0 | bin: 1 | d: 1 | bout: 0
+Time: 36 | a: 2 | b: 1 | bin: 0 | d: 1 | bout: 0
+Time: 38 | a: 2 | b: 1 | bin: 1 | d: 0 | bout: 0
+Time: 40 | a: 2 | b: 2 | bin: 0 | d: 0 | bout: 0
+Time: 42 | a: 2 | b: 2 | bin: 1 | d: 3 | bout: 1
+Time: 44 | a: 2 | b: 3 | bin: 0 | d: 3 | bout: 1
+Time: 46 | a: 2 | b: 3 | bin: 1 | d: 2 | bout: 1
+Time: 48 | a: 3 | b: 0 | bin: 0 | d: 3 | bout: 0
+Time: 50 | a: 3 | b: 0 | bin: 1 | d: 2 | bout: 0
+Time: 52 | a: 3 | b: 1 | bin: 0 | d: 2 | bout: 0
+Time: 54 | a: 3 | b: 1 | bin: 1 | d: 1 | bout: 0
+Time: 56 | a: 3 | b: 2 | bin: 0 | d: 1 | bout: 0
+Time: 58 | a: 3 | b: 2 | bin: 1 | d: 0 | bout: 0
+Time: 60 | a: 3 | b: 3 | bin: 0 | d: 0 | bout: 0
+Time: 62 | a: 3 | b: 3 | bin: 1 | d: 3 | bout: 1
+tb_twobit.v:28: $finish(2) called at 64 (1s)
+make[1]: Leaving directory 'C:/Users/jmorp/OneDrive/Desktop/Yr4/Sem1/Digital Electro Lab/Project'

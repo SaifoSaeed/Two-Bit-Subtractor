@@ -1,0 +1,81 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000019c0d986510 .scope module, "tb_basic" "tb_basic" 2 2;
+ .timescale 0 0;
+v0000019c0da96aa0_0 .var "a", 0 0;
+v0000019c0da96b40_0 .var "b", 0 0;
+v0000019c0da96be0_0 .net "c_and", 0 0, L_0000019c0da9a050;  1 drivers
+v0000019c0da96c80_0 .net "c_or", 0 0, L_0000019c0da9dc00;  1 drivers
+v0000019c0da9a950_0 .net "c_xor", 0 0, L_0000019c0da9a1e0;  1 drivers
+S_0000019c0d9866a0 .scope module, "AND_G" "and_g" 2 7, 3 1 0, S_0000019c0d986510;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "c";
+L_0000019c0da9a050 .functor AND 1, v0000019c0da96aa0_0, v0000019c0da96b40_0, C4<1>, C4<1>;
+v0000019c0da9a140_0 .net "a", 0 0, v0000019c0da96aa0_0;  1 drivers
+v0000019c0da99fb0_0 .net "b", 0 0, v0000019c0da96b40_0;  1 drivers
+v0000019c0d986830_0 .net "c", 0 0, L_0000019c0da9a050;  alias, 1 drivers
+S_0000019c0d9856f0 .scope module, "OR_G" "or_g" 2 8, 3 14 0, S_0000019c0d986510;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "c";
+L_0000019c0da9dc00 .functor OR 1, v0000019c0da96aa0_0, v0000019c0da96b40_0, C4<0>, C4<0>;
+v0000019c0d9868d0_0 .net "a", 0 0, v0000019c0da96aa0_0;  alias, 1 drivers
+v0000019c0d985880_0 .net "b", 0 0, v0000019c0da96b40_0;  alias, 1 drivers
+v0000019c0d985920_0 .net "c", 0 0, L_0000019c0da9dc00;  alias, 1 drivers
+S_0000019c0d9859c0 .scope module, "XOR_G" "xor_g" 2 9, 3 27 0, S_0000019c0d986510;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "c";
+L_0000019c0da9a1e0 .functor XOR 1, v0000019c0da96aa0_0, v0000019c0da96b40_0, C4<0>, C4<0>;
+v0000019c0da968c0_0 .net "a", 0 0, v0000019c0da96aa0_0;  alias, 1 drivers
+v0000019c0da96960_0 .net "b", 0 0, v0000019c0da96b40_0;  alias, 1 drivers
+v0000019c0da96a00_0 .net "c", 0 0, L_0000019c0da9a1e0;  alias, 1 drivers
+    .scope S_0000019c0d986510;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "tb_basic.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000019c0d986510 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000019c0d986510;
+T_1 ;
+    %vpi_call 2 17 "$monitor", "Time: %0t | a: %b | b: %h | c_and: %b | c_or: %b | c_xor: %b", $time, v0000019c0da96aa0_0, v0000019c0da96b40_0, v0000019c0da96be0_0, v0000019c0da96c80_0, v0000019c0da9a950_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019c0da96aa0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019c0da96b40_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019c0da96aa0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019c0da96b40_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019c0da96aa0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000019c0da96b40_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019c0da96aa0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000019c0da96b40_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 40 "$finish", 32'sb00000000000000000000000000000010 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_basic.v";
+    "./basic.v";
