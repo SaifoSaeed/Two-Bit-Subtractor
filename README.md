@@ -1,3 +1,4 @@
+_Note: This project was a forced requirement of my Digital Electronics Lab course. They tell me to make an AND gate after multiple courses on Computer Architecture and two 5-Stage CPUs with different ISAs (mostly part of my study plan). They busy us with menial tasks to keep us from learning. Really hope it helps someone out there since it sure wasted my time enough (1.5 hours)._
 # Two-Bit Subtractor
 
 This repository contains the design and implementation of a **Two-Bit Binary Subtractor**. The circuit accepts two 2-bit binary numbers as input and produces their difference and a borrow bit.
