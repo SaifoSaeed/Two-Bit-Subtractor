@@ -28,3 +28,7 @@ A 2-bit subtractor calculates the difference $A - B$, where $A$ and $B$ are 2-bi
 1. Clone the repository:
    ```bash
    git clone [https://github.com/SaifoSaeed/Two-Bit-Subtractor.git](https://github.com/SaifoSaeed/Two-Bit-Subtractor.git)
+2. Go the working directory of this project.
+3. Run:
+   ```bash
+   make
